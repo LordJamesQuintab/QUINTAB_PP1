@@ -460,66 +460,81 @@ img {
 }
 
 .sample-info p {
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 600;
-  max-height: 100px;
-  line-height: 1.7;
+  max-height: 50px;
+  line-height: 1.4;
+  text-align: center;
   margin: auto;
 }
 
 .sample-projects {
   background: transparent;
+  text-align: center;
+  padding: 0 0 20px;
 }
+
 .sample-projects a {
   text-decoration: none;
-  color: #fafafa;
+  padding: 0 0 12px;
+  color: #fbeeee;
+  text-align: center;
+  font-size: 100vh;
 }
+
 .sample-box {
   background-size: cover;
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-left: 10%;
   flex-direction: column;
 }
+
 .heading {
   margin-bottom: 5rem;
   align-items: center;
   text-align: center;
 }
+
 .sample-box .heading {
   margin-bottom: 5rem;
   align-items: center;
   text-align: center;
 }
+
 .sample-box img {
   width: 15rem;
   border-radius: 50%;
   border: 3px solid var(--main-color);
   box-shadow: 0 0 25px var(--main-color);
 }
+
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 2fr);
   gap: 3rem;
+  justify-content: center;
+  align-items: center;
 }
+
 .sample-item {
-  min-height: 5px;
-  max-width: 450px;
+  min-height: 400px;
+  max-width: 400px;
   background: #0e0c0c;
   border: 3px solid rgb(88, 79, 79);
-  border-radius: 3rem;
-  margin: 0 2rem;
-  padding: 30px 60px;
+  border-radius: 30px;
+  margin: 0 0 1rem;
+  padding: 1rem;
   cursor: pointer;
-  display: grid;
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 1.5rem;
-  color: white;
+  color: rgb(221, 57, 57);
   transition: 0.4s ease-in-out;
 }
+
 .sample-item:hover {
   border: 3px solid palegreen;
   transform: translateY(-10px) scale(1);
@@ -527,9 +542,14 @@ img {
 }
 .sample-item h2 {
   font-size: 2.8rem;
+  text-align: center;
+  padding: 10px;
 }
 .sample-item p {
   font-size: 10%;
+}
+.sample-item a {
+  font-size: 8px;
 }
 #github {
   color: gray;
